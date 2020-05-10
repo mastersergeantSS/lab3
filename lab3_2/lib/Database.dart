@@ -34,7 +34,9 @@ class DBProvider {
     onCreate: (Database db, int version) async {
       await db.execute("CREATE TABLE Students ("
       "id INTEGER PRIMARY KEY,"
-      "FIO TEXT,"
+      "firstName TEXT,"
+      "lastName TEXT,"
+      "middleName TEXT,"
       "time TEXT"
       ")");
     },
